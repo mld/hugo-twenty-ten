@@ -1,20 +1,3 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-    background: transparent;
-    border: 0;
-    margin: 0;
-    padding: 0;
-    vertical-align: baseline;
-    font-family: 'Microsoft Yahei', sans-serif;
-}
-
 body {
     background: #f1f1f1;
     color: #666;
@@ -24,10 +7,6 @@ body {
     display: block;
 }
 
-a {
-    text-decoration: none;
-}
-
 h1,h2,h3,h4,h5,h6 {
     font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
 }
@@ -35,17 +14,29 @@ h1,h2,h3,h4,h5,h6 {
 input[type="submit"] {
     font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
 }
+
 pre {
-    font-family: "Courier 10 Pitch", Courier, monospace;
+    font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
+
 code {
     font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
 }
 
 a:hover {
     color: red;
 }
 
+@media (min-width: 1200px) {
+    .container {
+        width: 970px;
+    }
+}
 
 
 
@@ -53,12 +44,8 @@ header {
     padding-top: 30px;
 }
 
-.site-wrapper {
-    width: 940px;
+#site-wrapper {
     background: #fff;
-    margin: 0 auto;
-    margin-top: 20px;
-    padding: 0 20px;
 }
 
 #site-title {
@@ -112,18 +99,10 @@ header {
 }
 
 .post footer ul {
-    list-style-type: none;
     display: inline;
-}
-
-.post footer ul li {
-    display: inline;
-    padding: 0 5px;
 }
 
 .post footer ul a {
-    text-decoration: underline;
-    color: gray;
 }
 
 .post nav .previous {
@@ -138,6 +117,9 @@ header {
 }
 
 
+
+
+/* Footer */
 
 .site-footer {
     margin-bottom: 20px;
