@@ -120,16 +120,3 @@ header {
     padding: 18px 0;
 }
 
-.site-footer .copyright {
-    float: left;
-    font-size: 14px;
-    width: 600px;
-}
-
-.site-footer .poweredby {
-    float: right;
-    width: 320px;
-    text-align: right;
-    font-style: italic;
-    font-size: 10px;
-}
