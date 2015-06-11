@@ -2,10 +2,11 @@
 {{ $baseurl := .Site.BaseURL }}
 
 
-<section id="main">
+<section>
     {{ .Render "full_content" }}
 </section>
 
 {{ partial "sidebar.html" }}
+{{ partial "footer.html" . }}
 
 
