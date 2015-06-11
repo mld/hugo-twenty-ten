@@ -12,28 +12,29 @@
     <footer>
         <div class="post-meta">
             分类：
-            <ul id="categories">
+            <ul class="list-inline">
                 {{ range .Params.categories }} <li><a href="/topics/{{ . | urlize }}">{{ . }}</a></li> {{ end }}
             </ul>
         </div>
 
         <div class="post-meta">
             标签：
-            <ul id="tags">
-                {{ range .Params.tags }} <li><a href="/tags/{{ . | urlize }}">{{ . }}</a></li> {{ end }}
+            <ul class="list-inline">
+                {{ range .Params.tags }} <li><a href="/tags/{{ . | urlize }}"><span class="label label-default">{{ . }}</span></a></li> {{ end }}
             </ul>
         </div>
 
+        <br/>
         <nav class="post-meta">
-            <div>
-                {{ if .Prev }}
-                    <a class="previous" href="{{.Prev.Permalink}}"> {{.Prev.Title}}</a>
-                {{ end }}
-                {{ if .Next }}
-                    <a class="next" href="{{.Next.Permalink}}"> {{.Next.Title}}</a>
-                {{ end }}
-            </div>
+            <p class="col-md-6">
+                {{ if .Prev }} <a class="previous" href="{{.Prev.Permalink}}"> &lt; {{.Prev.Title}} </a> {{ end }}
+            </p>
+
+            <p class="col-md-6">
+                {{ if .Next }} <a class="next" href="{{.Next.Permalink}}"> {{.Next.Title}} &gt;</a> {{ end }}
+            </p>
         </nav>
+        <br/>
 
     </footer>
 
