@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
 
-{{ range first 10 .Data.Pages.ByDate }}
+{{ range first 10 .Data.Pages.ByDate.Reverse }}
     {{ .Render "summary" }}
 {{ end }}
 
