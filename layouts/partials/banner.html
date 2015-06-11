@@ -1,11 +1,13 @@
-<header id="branding" role="banner">
-    <h1 id="site-title">
-        <span>
-            <a href="{{.Site.BaseURL }}" title="{{ .Site.Title }}" rel="home">{{ .Site.Title }}</a>
-        </span>
-    </h1>
-    <div id="site-description">{{ .Site.Params.Description }}</div>
+<header>
+    <div class="row">
+        <div class="col-md-6">
+            <h2><a href="{{.Site.BaseURL }}" title="{{ .Site.Title }}" rel="home">{{ .Site.Title }}</a></h2>
+        </div>
 
-    <img src="/img/banner.jpg" width="940" height="198" alt="">
+        <div class="col-md-6">
+            <div id="site-description">{{ .Site.Params.Description }}</div>
+        </div>
+    </div>
+
+    <img src="/img/banner.jpg" class="img-responsive">
 </header>
-
