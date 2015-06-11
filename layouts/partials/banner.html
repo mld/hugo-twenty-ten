@@ -1,11 +1,11 @@
 <header>
     <div class="row">
-        <div class="col-md-6">
-            <h2><a href="{{.Site.BaseURL }}" title="{{ .Site.Title }}" rel="home">{{ .Site.Title }}</a></h2>
+        <div class="col-md-6" id="site-title">
+            <a href="{{.Site.BaseURL }}" title="{{ .Site.Title }}" rel="home"><h2>{{ .Site.Title }}</h2></a>
         </div>
 
-        <div class="col-md-6">
-            <div id="site-description">{{ .Site.Params.Description }}</div>
+        <div class="col-md-6" id="site-description">
+            <i class="text-right muted"><div id="site-description">{{ .Site.Params.Description }}</div></i>
         </div>
     </div>
 

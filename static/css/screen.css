@@ -48,6 +48,17 @@ header {
     background: #fff;
 }
 
+#site-title h2 {
+    line-height: 36px;
+    color: black;
+}
+
+#site-description {
+    line-height: 36px;
+    margin-top: 15px;
+    padding-right: 20px;
+}
+
 
 .post {
     color: #333;
