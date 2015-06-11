@@ -2,15 +2,17 @@
 
     <header>
         <h2 class="post-title"><a href='{{ .Permalink }}'> {{ .Title }}</a> </h2>
-        <div class="post-meta">发表于{{ .Date.Format "2011-04-08" }} </div>
+        <div class="post-meta">发表于{{ .Date.Format "2006-01-02 15:04:05" }} </div>
     </header>
 
     <section>
         <div class="post-summary">{{ .Summary }}</div>
     </section>
 
-    <footer>
-        <p><a href='{{ .Permalink }}'><nobr>继续阅读 →</nobr></a></p>
-    </footer>
+    {{ if .Truncated }}
+        <footer>
+            <p><a href='{{ .Permalink }}'><nobr>继续阅读 →</nobr></a></p>
+        </footer>
+    {{ end }}
 
 </article>
