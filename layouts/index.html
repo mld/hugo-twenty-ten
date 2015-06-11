@@ -1,7 +1,8 @@
 {{ partial "header.html" . }}
 
-{{ range first 10 .Data.Pages.ByDate.Reverse }}
+{{ range first 10 .Paginator.Pages.ByDate.Reverse }}
     {{ .Render "summary" }}
 {{ end }}
 
+{{ partial "pager.html" . }}
 {{ partial "footer.html" . }}

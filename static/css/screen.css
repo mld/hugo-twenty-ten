@@ -48,23 +48,6 @@ header {
     background: #fff;
 }
 
-#site-title {
-    float: left;
-    font-size: 30px;
-    line-height: 36px;
-    margin: 0 0 18px 0;
-    width: 700px;
-    color: black;
-    font-weight: bold;
-}
-
-#site-description {
-    clear: right;
-    float: right;
-    font-style: italic;
-    margin: 15px 0 18px 0;
-    width: 220px;
-}
 
 .post {
     color: #333;
@@ -118,6 +101,9 @@ header {
 
 
 
+#pager {
+    margin: 10px 15px;
+}
 
 /* Footer */
 
