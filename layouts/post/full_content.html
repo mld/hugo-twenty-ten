@@ -1,0 +1,40 @@
+<article class="post">
+
+    <header>
+        <h2 class="post-title"><a href='{{ .Permalink }}'> {{ .Title }}</a> </h2>
+        <div class="post-meta">发表于{{ .Date.Format "2006-01-02 15:04:05" }} </div>
+    </header>
+
+    <section>
+        <div class="post-summary">{{ .Content }}</div>
+    </section>
+
+    <footer>
+        <div class="post-meta">
+            分类：
+            <ul id="categories">
+                {{ range .Params.categories }} <li><a href="/topics/{{ . | urlize }}">{{ . }}</a></li> {{ end }}
+            </ul>
+        </div>
+
+        <div class="post-meta">
+            标签：
+            <ul id="tags">
+                {{ range .Params.tags }} <li><a href="/tags/{{ . | urlize }}">{{ . }}</a></li> {{ end }}
+            </ul>
+        </div>
+
+        <nav class="post-meta">
+            <div>
+                {{ if .Prev }}
+                    <a class="previous" href="{{.Prev.Permalink}}"> {{.Prev.Title}}</a>
+                {{ end }}
+                {{ if .Next }}
+                    <a class="next" href="{{.Next.Permalink}}"> {{.Next.Title}}</a>
+                {{ end }}
+            </div>
+        </nav>
+
+    </footer>
+
+</article>
