@@ -42,6 +42,10 @@ code {
     font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
 
+a:hover {
+    color: red;
+}
+
 
 
 
@@ -105,6 +109,32 @@ header {
 
 .post footer {
     margin-bottom: 24px;
+}
+
+.post footer ul {
+    list-style-type: none;
+    display: inline;
+}
+
+.post footer ul li {
+    display: inline;
+    padding: 0 5px;
+}
+
+.post footer ul a {
+    text-decoration: underline;
+    color: gray;
+}
+
+.post nav .previous {
+    float: left;
+    width: 50%;
+}
+
+.post nav .next {
+    float: right;
+    text-align: right
+    width: 50%;
 }
 
 
