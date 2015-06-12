@@ -131,3 +131,17 @@ header {
     padding: 18px 0;
 }
 
+
+/* Sidebar */
+
+#sidebar {
+    padding-top: 20px;
+}
+
+#sidebar .sidebar-block {
+    padding-top: 10px;
+}
+
+#sidebar #tag_cloud_canvas {
+}
+
