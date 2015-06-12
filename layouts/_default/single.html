@@ -1,12 +1,17 @@
 {{ partial "header.html" . }}
-{{ $baseurl := .Site.BaseURL }}
 
+<div class="row">
+    <div class="col-md-9">
+        <section>
+            {{ .Render "full_content" }}
+        </section>
+    </div>
 
-<section>
-    {{ .Render "full_content" }}
-</section>
+    <div class="col-md-3">
+        {{ partial "sidebar.html" . }}
+    </div>
+</div>
 
-{{ partial "sidebar.html" }}
 {{ partial "footer.html" . }}
 
 

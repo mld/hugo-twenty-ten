@@ -1,8 +1,17 @@
 {{ partial "header.html" . }}
 
-{{ range first 10 .Paginator.Pages.ByDate.Reverse }}
-    {{ .Render "summary" }}
-{{ end }}
+<div class="row">
+    <div class="col-md-9">
+        {{ range first 10 .Paginator.Pages.ByDate.Reverse }}
+            {{ .Render "summary" }}
+        {{ end }}
 
-{{ partial "pager.html" . }}
+        {{ partial "pager.html" . }}
+    </div>
+
+    <div class="col-md-3">
+        {{ partial "sidebar.html" . }}
+    </div>
+</div>
+
 {{ partial "footer.html" . }}

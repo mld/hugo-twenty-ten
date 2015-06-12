@@ -1,1 +1,19 @@
-tag
+{{ partial "header.html" . }}
+
+<div class="row">
+    <div class="col-md-9">
+        <ul>
+            {{ $data := .Data }}
+            {{ range $key, $value := .Data.Terms }}
+            <li><a href="/{{ $data.Plural }}/{{ $key | urlize }}">{{ $key }}</a> {{ len $value }}</li>
+            {{ end }}
+        </ul>
+    </div>
+
+    <div class="col-md-3">
+        {{ partial "sidebar.html" . }}
+    </div>
+</div>
+
+
+{{ partial "footer.html" . }}
