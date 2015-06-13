@@ -1,7 +1,9 @@
-+++
-draft = false
-slug = "post-title"
-tags = ["tag1","tag2"]
-comments = true
-share = true
-+++
+---
+draft: false
+slug: "post-title"
+categories:
+- 杂九杂十^_^
+tags: []
+comments: true
+share: true
+---
