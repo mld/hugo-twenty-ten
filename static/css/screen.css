@@ -145,3 +145,12 @@ header {
 #sidebar #tag_cloud_canvas {
 }
 
+
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #00c;
+}
+
