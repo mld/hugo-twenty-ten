@@ -19,7 +19,7 @@
     </div>
 
     <div class="sidebar-block">
-        <h5<Taggar:</h5>
+        <h5>Taggar:</h5>
         <div id="tag_cloud" data-tags="{{ range $key, $value := .Site.Taxonomies.tags }} ['{{$key}}', {{len $value}}, '/tags/{{ $key | urlize }}']; {{ end }}" />
     </div>
 
