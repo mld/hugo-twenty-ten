@@ -1,7 +1,7 @@
 <aside id="sidebar">
 
     <div class="sidebar-block">
-        <h5>新鲜出炉</h5>
+        <h5>Senaste uppdateringar:</h5>
         <ul class="list-unstyled">
         {{ range first 5 .Site.Pages }}
             <li><a href='{{ .Permalink }}'> {{ .Title }}</a></li>
@@ -10,7 +10,7 @@
     </div>
 
     <div class="sidebar-block">
-        <h5>分类</h5>
+        <h5>Kategorier:</h5>
         <ul class="list-unstyled">
         {{ range $key, $value := .Site.Taxonomies.categories }}
             <li><a href="/categories/{{ $key | urlize }}">{{ $key }}</a> &nbsp;({{ len $value }})</li>
@@ -19,7 +19,7 @@
     </div>
 
     <div class="sidebar-block">
-        <h5>标签</h5>
+        <h5<Taggar:</h5>
         <div id="tag_cloud" data-tags="{{ range $key, $value := .Site.Taxonomies.tags }} ['{{$key}}', {{len $value}}, '/tags/{{ $key | urlize }}']; {{ end }}" />
     </div>
 
